@@ -5,12 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    let x = 1;
-    for (let i = 0; i < 3; i++) {
-        x = x + 1;
-    }
-    console.log(x);
-</script>
+<table border="1" width="100%">
+    <script>
+        let n = "";
+        for (let i = 1; i <= 9; i++) {
+            n += "<tr>";
+            for (let j = 2; j <= 9; j++) {
+                n += "<td>" + j + "x" + i + "=" +
+                    i * j + "</td>"
+            }
+            n += "</tr>"
+        }
+        document.write(n)
+    </script>
+</table>
 </body>
 </html>
