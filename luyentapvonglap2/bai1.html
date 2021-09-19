@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let N = 50
+    let a = 1;
+    let b = 1;
+    let c = a + b;
+    let count = 2;
+    document.write(a + ',' + b);
 
+    while (count < N) {
+        c = a + b;
+        a = b;
+        b = c;
+
+        document.write(','+c);
+        count++;
+    }
+</script>
 </body>
 </html>
